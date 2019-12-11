@@ -1,0 +1,137 @@
+@charset "utf-8";
+
+/* CSS Document for adaptive site example  DA 131b */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, #side, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, #side, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+
+/* end of Eric's Reset styles */
+
+/* *************MOBILE STYLES*********** */
+
+#wrapper {
+    margin: auto;  /* centers app in desktop */
+    max-width: 32rem;
+    padding: 1em;
+    color: white;
+    background:black no-repeat left url("images/beer.jpg");
+}
+
+h1 {
+    font-family: Verdana, Tahoma, sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+    line-height: 1.25em;
+    justify-content: center;
+    color: white;   
+}
+
+h2 {
+    font-family: Verdana, Tahoma, sans-serif;
+    font-size: 1.25em;
+    font-weight: bold;
+    line-height: 1.25em;
+    color: white;
+    margin: 0.5em 0em;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    color: white;   
+    line-height: 1.5em; 
+}
+
+input, select {
+    width: 20em;
+}
+
+button {
+    margin: 0.5em 0em;
+}
+
+#message1  {
+    display: inline;
+    color: red;
+}
+
+#message2  {
+    display: inline;
+    color: green;   
+}
+
+footer p  {
+    line-height: 1.25em;
+    font-size: 0.8em;
+}
+
+#copy  {
+    padding-top: 0.5em;
+    font-size: 0.75em;
+    font-weight: normal;
+}
+
+/* ***********************************************************************************************
+*
+*                              MEDIA QUERIES - TABLET SIZE SCREEN
+*
+************************************************************************************************ */
+
+
+
+
+/* ***********************************************************************************************
+*
+*                              MEDIA QUERIES - DESKTOP SIZE SCREEN
+*
+************************************************************************************************ */
+
+
+@media screen and (min-width: 48em) {
+    #wrapper {
+        background-color: black; 
+    }
+
+    h1 {
+        font-size: 2.5em;
+        line-height: 1.25em;   
+    }
+    
+    h2 {
+        font-size: 1.5em;
+        line-height: 1.25em;
+    }
+
+} /* ***************END OF MEDIA QUERY**************** */

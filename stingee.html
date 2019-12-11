@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <title>Stingee Bingee | Budget Alculator</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link type="text/css" rel="stylesheet" href="styles.css" media="screen" />
+    <script src="bac.js"></script>
+</head>
+
+<body>
+
+<div id="wrapper">
+
+<main>
+
+<h1>Stingee Bingee<br /> The Budget Alculator</h1>
+    <h2>An Easy Way To Estimate Your BAC, <br /> Before You Drink!</h2>
+        <p>Booze Budget:</p>
+
+        <input type="number" name="money" id="money" placeholder="How much money do you have for booze?" min="1">
+
+        <p>Metabolism Rate:</p>
+
+        <form name="form2" action="" method="POST">
+                <select id="metabolism" name="metabolismrate"> <!-- document.getElementById('metabolism').value -->
+                <option value=0.071>Male</option>
+                <option value=0.085>Female</option>
+            </select>
+        </form>
+
+        <p>Beverage Options:</p>
+
+        <form name="form1" action="" method="POST">
+            <select id="alcohol" name="alcoholicbeverage"> <!-- document.getElementById('alcohol').value -->
+                
+                <option value=0>Beer Can 355ml $1.50</option>
+                <option value=1>Cheap Beer 6-pack $7.00</option>
+                <option value=2>Average Beer 6-pack $10.00</option>
+                <option value=3>Premium Beer 6-pack $13.00</option>
+                <option value=4>Craft Beer 4-pack tallies(strong) $18.00</option>
+                <option value=5>Wine in a Can 250ml $4.00</option>
+                <option value=6>cheap Wine 750ml bottle $8.00</option>
+                <option value=7>Average Wine 750ml bottle $12.00</option>
+                <option value=8>Premium Wine 750ml bottle $20.00</option>
+                <option value=9>Shot of Liquor 50ml $3.30</option>
+                <option value=10>Cheap Vodka 375ml bottle $11.50</option>
+                <option value=11>Average Vodka 375ml bottle $15.00</option>
+                <option value=12>Premium Vodka 375ml bottle $27.00</option>
+                <option value=13>Cheap Rye 375ml bottle $11.50</option>
+                <option value=14>Average Rye 375ml bottle $13.50</option>
+                <option value=15>Premium Rye 375ml bottle $18.00</option>
+                <option value=16>Fruit Cooler 2l bottle $9.00</option>
+                <option value=17>Cider 6-pack $10.00</option>         
+            </select>
+        </form> 
+
+            <p>Quantity:</p>
+
+                <input type="number" name="quantity" id="quantity" placeholder="How many units?" min="1">
+
+                <button type="button" id="funds" onclick="howMany()">Check your funds</button><br />
+    
+            <p id="message1"></p><p id="message2"></p>
+    
+
+            <p>Weight(lb):</p>
+
+                <input type="number" name="mass" id="mass" placeholder="How much do you weigh in pounds?" min="1">
+
+            <p>Hours:</p>
+
+                <input type="number" name="hours" id="hours" placeholder="How many hours are you drinking for?" min="1"><br />
+
+        <button type="button" id="alculate" onclick="bacM();">Alculate!</button>
+
+    </main>
+
+    <footer>
+        <p>Disclaimer: This application is for entertainment purposes only. True "Blood Alcohol Content" calculations can vary and include other factors. By clicking the "Alculate" button you are acknowledging that the user assumes all risks and liabilities.</p>
+        <p id="copy">copyright 2019 CORWES DESIGNS</p>
+    </footer>
+</div>
+</body>
+</html>
+
+
+    
+   
+
